@@ -1,0 +1,68 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.shadowAnim {
+  position: absolute;
+  background: radial-gradient(circle, hsl(var(--primary) / 80%) 20%, hsl(var(--primary) / 0%) 60%);
+  border-radius: 24px;
+  rotate: 35deg;
+
+  width: 350px;
+  top: 100px;
+  height: 350px;
+  animation: shadow-slide infinite 4s linear alternate;
+}
+/* } */
+
+@keyframes shadow-slide {
+  from {
+    /* background: hsl(var(--primary) / 20%); */
+    opacity: 0.2;
+    left: 30%;
+  }
+  to {
+    /* background: hsl(var(--primary) / 80%); */
+    opacity: 0.8;
+    left: 50%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .shadowAnim {
+    top: 70px;
+  }
+
+  @keyframes shadow-slide {
+    from {
+      /* background: hsl(var(--primary) / 20%); */
+      opacity: 0.2;
+      right: 70%;
+    }
+    to {
+      /* background: hsl(var(--primary) / 50%); */
+      opacity: 0.8;
+      right: 20%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .shadowAnim {
+    top: 70px;
+    width: 100px;
+    height: 350px;
+    filter: blur(60px);
+  }
+
+  @keyframes shadow-slide {
+    from {
+      background: hsl(var(--primary) / 20%);
+      left: 280px;
+    }
+    to {
+      background: hsl(var(--primary) / 30%);
+      left: 100px;
+    }
+  }
+}

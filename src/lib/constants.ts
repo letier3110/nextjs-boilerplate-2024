@@ -1,0 +1,6 @@
+export const EMAIL = 'youremail@mail.com'
+export const COUNTRY = 'USA, Texas'
+export const PHONE = '+1 234 567 890'
+export const COMPANY_SHORT = 'YOURCOMPANY'
+export const COMPANY = 'Your Company'
+export const ADDRESS = 'House on Fire'
