@@ -2,6 +2,7 @@ import { Accordion, AccordionItem, AccordionContent } from '@/components/ui/acco
 // import { MedalIcon, MapIcon, PlaneIcon, GiftIcon } from './Icons'
 import { AccordionHeader } from '@radix-ui/react-accordion'
 import { ClipboardCheck, HelpCircle, BriefcaseBusiness, Code, RefreshCw } from 'lucide-react'
+import Timeline from '../custom/timeline'
 
 interface FeatureProps {
   icon: JSX.Element
@@ -46,6 +47,8 @@ export default function HowItWorks() {
       <p className='lg:max-w-[75%] mx-auto mt-4 mb-8 text-xl text-muted-foreground'>
         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
+
+      <Timeline />
 
       <div className='mx-auto mt-4'>
         <Accordion
